@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title> Papai </title>
+		<link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <h1>Naylaa!! 🎂</h1>
+    <p>Feliz aniversário, Nayla! Quero que você saiba o 
+        quanto eu te amo e o quanto você é uma das pessoas 
+        mais especiais da minha vida. Ter te conhecido foi, 
+        uma das coisas mais legais que me aconteceu no IF, 
+        e eu sou muito grata por ter você ao meu lado. 
+        Te desejo tudo de bom e de melhor sempre! 
+        Que sua vida seja cheia de momentos felizes, 
+        conquistas incríveis e muito amor. Te amooo, bb! 💖</p>
+		<br>
+		<p>Assinado: Emanuelle Ferraz de oliveira</p>
+        <p>Assinado: Emanuelle Ferraz de oliveira</p>
+
+<script>
+function criarCoracao() {
+  const coracao = document.createElement("div");
+  coracao.innerHTML = "💖";
+  coracao.style.position = "fixed";
+  coracao.style.left = Math.random() * 100 + "vw";
+  coracao.style.top = "100vh";
+  coracao.style.fontSize = Math.random() * 20 + 20 + "px";
+  coracao.style.opacity = Math.random();
+  coracao.style.transition = "transform 3s linear, opacity 3s";
+
+  document.body.appendChild(coracao);
+
+  setTimeout(() => {
+    coracao.style.transform = "translateY(-100vh)";
+    coracao.style.opacity = "0";
+  }, 100);
+
+  setTimeout(() => {
+    coracao.remove();
+  }, 3000);
+}
+
+setInterval(criarCoracao, 300);
+</script>
+
+
+  </body>
+</html>
